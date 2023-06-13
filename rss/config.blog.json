@@ -1,0 +1,43 @@
+{
+	"feedPath": "../docs/posts/rss.xml",
+	"title": "mi Blog | iyaki",
+	"description": "Blog personal donde comparto mis experiencias y pensamientos",
+	"feed_url": "https://iyaki.ar/posts/rss.xml",
+	"site_url": "https://iyaki.ar/blog.html",
+	"image_url": "https://iyaki.ar/images/logo.webp",
+	"webMaster": "Ivan Yaki",
+	"language": "es",
+	"categories": [
+		"Tecnología",
+		"Diseño de sistemas",
+		"Management"
+	],
+	"ttl": "60",
+	"articles": {
+		"baseUrl": "https://iyaki.ar",
+		"htmlPath": "../docs/blog.html",
+		"limit": 10,
+		"articlesSelector": "body > main > article",
+		"title": {
+			"selector": "header h1",
+			"property": "text"
+		},
+		"description": {
+			"selector": "p",
+			"property": "text"
+		},
+		"url": {
+			"selector": "header a",
+			"method": "getAttribute",
+			"methodArguments": ["href"]
+		},
+		"author": {
+			"value": "Ivan Yaki"
+		},
+		"date": {
+			"selector": "time",
+			"method": "getAttribute",
+			"methodArguments": ["datetime"]
+		}
+	}
+}
