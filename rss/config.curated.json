@@ -25,7 +25,7 @@
 			"property": "text"
 		},
 		"url": {
-			"selector": "p:last-child a",
+			"selector": "p:last-of-type a",
 			"method": "getAttribute",
 			"methodArguments": ["href"]
 		}

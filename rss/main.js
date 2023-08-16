@@ -6,7 +6,7 @@ import { process as processArticles } from './articles.js'
 const args = process.argv.slice(2)
 
 if (args.length === 0) {
-	throw 'ERROR: El script requiere un argumento, el path al archivo de configuración'
+	throw new Error('ERROR: El script requiere un argumento, el path al archivo de configuración')
 }
 
 const config = JSON.parse(fs.readFileSync(args[0], { encoding: 'utf8' }))
