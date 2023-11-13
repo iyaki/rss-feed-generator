@@ -1,9 +1,9 @@
 {
-	"feedPath": "../docs/curated-rss.xml",
+	"feedPath": "../docs/curated/rss.xml",
 	"title": "Recopilador de contenidos curados | iyaki",
-	"feed_url": "https://iyaki.ar/curated-rss.xml",
-	"site_url": "https://iyaki.ar/curated.html",
-	"image_url": "https://iyaki.ar/images/logo.webp",
+	"feed_url": "https://iyaki.ar/curated/rss.xml",
+	"site_url": "https://iyaki.ar/curated",
+	"image_url": "https://iyaki.ar/images-shared/logo.svg",
 	"webMaster": "Ivan Yaki",
 	"language": "es",
 	"categories": [
@@ -13,7 +13,7 @@
 	],
 	"ttl": "60",
 	"articles": {
-		"htmlPath": "../docs/curated.html",
+		"htmlPath": "../docs/curated/index.html",
 		"limit": 20,
 		"articlesSelector": "body > main > section > article",
 		"title": {
