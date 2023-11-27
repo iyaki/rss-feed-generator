@@ -3,8 +3,7 @@
 	"title": "Recopilador de contenidos curados | iyaki",
 	"feed_url": "https://iyaki.ar/curated/rss.xml",
 	"site_url": "https://iyaki.ar/curated",
-	"image_url": "https://iyaki.ar/images-shared/logo.svg",
-	"webMaster": "Ivan Yaki",
+	"image_url": "https://iyaki.ar/images/logo.svg",
 	"language": "es",
 	"categories": [
 		"Tecnología",
