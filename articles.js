@@ -6,7 +6,6 @@ export function process(articlesConfig) {
 	const html = fs.readFileSync(articlesConfig.htmlPath, { encoding: 'utf8' })
 
 	const limit = articlesConfig.limit
-	const newerThan = addMonths(new Date(), -6).toISOString()
 	const baseUrl = (
 		articlesConfig.baseUrl
 		? articlesConfig.baseUrl
@@ -41,22 +40,8 @@ export function process(articlesConfig) {
 			item.categories = extractor.getMultiValue(articlesConfig.categories)
 		}
 
-		if (!item.date || newerThan < item.date) {
-			items.push(item)
-		}
+		items.push(item)
 	}
 
 	return items
-}
-
-function getDaysInMonth (year, month) {
-	return new Date(year, month, 0).getDate()
-}
-
-function addMonths(input, months) {
-  const date = new Date(input)
-  date.setDate(1)
-  date.setMonth(date.getMonth() + months)
-  date.setDate(Math.min(input.getDate(), getDaysInMonth(date.getFullYear(), date.getMonth()+1)))
-  return date
 }

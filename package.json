@@ -1,0 +1,19 @@
+{
+	"name": "rss-feed-generator",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "main.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iyaki/rss-feed-generator.git"
+	},
+	"author": "iyaki",
+	"bugs": {
+		"url": "https://github.com/iyaki/rss-feed-generator/issues"
+	},
+	"homepage": "https://github.com/iyaki/rss-feed-generator",
+	"dependencies": {
+		"node-html-parser": "^6.1.5",
+		"rss": "^1.2.2"
+	}
+}
